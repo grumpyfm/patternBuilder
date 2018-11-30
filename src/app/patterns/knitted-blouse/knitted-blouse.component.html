@@ -1,0 +1,64 @@
+<div class="measuresForm">
+  <form>
+    <div class="form-group">
+      <label for="breastEmbroidery">Обхват грудей</label>
+      <div>
+        <input class="measureInput form-control" id="breastEmbroidery" type="number"
+               ngModel name="breastEmbroidery" #breastEmbroidery="ngModel">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="label" for="lengthOfBackToWaist">Довжина спинки до талії</label>
+      <div>
+        <input class="measureInput form-control" id="lengthOfBackToWaist" type="number"
+               ngModel name="lengthOfBackToWaist" #lengthOfBackToWaist="ngModel">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="label" for="depthOfTheArmhole">Глибина пройми</label>
+      <div>
+        <input class="measureInput form-control" id="depthOfTheArmhole" type="number"
+               ngModel name="depthOfTheArmhole" #depthOfTheArmhole="ngModel">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="label" for="backWidth">Ширина спини</label>
+      <div>
+        <input class="measureInput form-control" id="backWidth" type="number"
+               ngModel name="backWidth" #backWidth="ngModel">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="label" for="circumferenceOfTheNeck">Обхват шиї</label>
+      <div>
+        <input class="measureInput form-control" id="circumferenceOfTheNeck" type="number"
+               ngModel name="circumferenceOfTheNeck" #circumferenceOfTheNeck="ngModel">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="label" for="sleeveLength">Довжина рукава</label>
+      <div>
+        <input class="measureInput form-control" id="sleeveLength" type="number"
+               ngModel name="sleeveLength" #sleeveLength="ngModel">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="label" for="wrapCircumference">Обхват зап'ястя</label>
+      <div>
+        <input class="measureInput form-control" id="wrapCircumference" type="number"
+               ngModel name="wrapCircumference" #wrapCircumference="ngModel">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="label" for="lengthOfProduct">Довжина виробу</label>
+      <div>
+        <input class="measureInput form-control" id="lengthOfProduct" type="number"
+               ngModel name="lengthOfProduct" #lengthOfProduct="ngModel">
+      </div>
+    </div>
+    <button type="submit"
+            (click)="saveMeasures(breastEmbroidery,lengthOfBackToWaist,depthOfTheArmhole,backWidth,circumferenceOfTheNeck,sleeveLength,wrapCircumference, lengthOfProduct)"
+            class="btn btn-primary">Submit
+    </button>
+  </form>
+</div>
