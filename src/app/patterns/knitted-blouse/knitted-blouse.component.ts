@@ -18,9 +18,8 @@ export class KnittedBlouseComponent {
     wrapCircumference: 16,
     lengthOfProduct: 55,
   }];
-
-
-  saveMeasures(breastEmbroidery, lengthOfBackToWaist, depthOfTheArmhole, backWidth, circumferenceOfTheNeck, sleeveLength, wrapCircumference, lengthOfProduct) {
+  saveMeasures(breastEmbroidery, lengthOfBackToWaist, depthOfTheArmhole, backWidth,
+               circumferenceOfTheNeck, sleeveLength, wrapCircumference, lengthOfProduct) {
     const pattern: knittedBlouseMeasures = new knittedBlouseMeasures(
       breastEmbroidery.viewModel,
       lengthOfBackToWaist.viewModel,
@@ -39,11 +38,11 @@ export class KnittedBlouseComponent {
       circumferenceOfTheNeck.viewModel,
       sleeveLength.viewModel,
       wrapCircumference.viewModel,
-      lengthOfProduct.viewModel)
-  };
+      lengthOfProduct.viewModel);
+  }
 
   buildPattern(OG, DCT, depthOfTheArmhole, SC, OS, DR, OZ, AD) {
-    let AT = +DCT + 1,
+    const AT = +DCT + 1,
       AG = +depthOfTheArmhole - 2,
       AP = +AG / 2,
       AR = +AP / 8,
